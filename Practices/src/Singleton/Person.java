@@ -1,7 +1,7 @@
 package Singleton;
 
 public class Person {
-	private static Person person;
+	private static Person person;   //单例模式
 	
 	private String name;
 	private String age;
@@ -38,18 +38,20 @@ public class Person {
 	}
 
 
-	private Person(){
+	private Person(){    //私有化构造方法
 		
 	}
 
 	
-	public static Person getPerson(){
+	public static synchronized Person getPerson(){ //创建实例
 		if(person == null){
 			person = new Person();
 		}
 		return person;
 	}
 
+	
+	@Override
 	public String toString(){
 		return name;
 	}

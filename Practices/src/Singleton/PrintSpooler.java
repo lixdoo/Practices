@@ -31,6 +31,7 @@ public class PrintSpooler {
 		System.out.println(s);
 	}
 	
+	@Override
 	public String toString(){
 		return this.age;
 	}
