@@ -35,6 +35,6 @@ public class Person {
 	}
 	
 	public String toString(){
-		return "姓名："+name+"\n";
+		return "姓名："+name;
 	}
 }
